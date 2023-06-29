@@ -1,15 +1,16 @@
 
 <html>
+
  
 <div id="lightning"></div>
- <script src="https://fctgl--gogotcs.sandbox.my.site.com/gogvacationnew/lightning/lightning.out.js"></script>
+ <script src="https://fctgl--uat.sandbox.my.site.com/GogoAgentOnboardingTest/lightning/lightning.out.js"></script>
   
 <div data-lightning-out="true"></div>
 <script>
 
-    const appName = 'c:Gogovacation';
-    const componentName = 'c:gogoAgentRegistrationOnExternalWebsite';
-    const lightningEndpoint = 'https://fctgl--gogotcs.sandbox.my.site.com/gogvacationnew';
+    const appName = 'c:GogoAgentOnboarding';
+    const componentName = 'c:gogoAgentRegistration';
+    const lightningEndpoint = 'https://fctgl--uat.sandbox.my.site.com/GogoAgentOnboardingTest';
     const targetElement = document.querySelector("[data-lightning-out]");
     const componentAttributes = {
 
@@ -25,7 +26,7 @@
                       function (cmp){
                         console.log('lightning component created');
                       }
-              );A
+              );
             },
             lightningEndpoint
     );
