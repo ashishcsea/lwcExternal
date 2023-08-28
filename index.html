@@ -1,10 +1,35 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
-  </body>
+
+ 
+<div id="lightning"></div>
+ <script src="https://fctgl.force.com/GOGOAgentOnboarding/lightning/lightning.out.js"></script>
+  
+<div data-lightning-out="true"></div>
+<script>
+
+    const appName = 'c:GogoAgentOnboarding';
+    const componentName = 'c:gogoAgentRegistration';
+    const lightningEndpoint = 'https://fctgl.force.com/GOGOAgentOnboarding';
+    const targetElement = document.querySelector("[data-lightning-out]");
+    const componentAttributes = {
+
+    };
+
+    $Lightning.use(
+            appName,
+            function (){
+              $Lightning.createComponent(
+                      componentName,
+                      componentAttributes,
+                      targetElement,
+                      function (cmp){
+                        console.log('lightning component created');
+                      }
+              );
+            },
+            lightningEndpoint
+    );
+
+
+  </script>
 </html>
